@@ -852,6 +852,11 @@
       width: calc(8/10 * 100%);
     }
   }
+  .lg\:w-9\/10 {
+    @media (width >= 64rem) {
+      width: calc(9/10 * 100%);
+    }
+  }
   .lg\:w-10 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 10);
@@ -1052,6 +1057,26 @@
   .xl\:w-5\/10 {
     @media (width >= 80rem) {
       width: calc(5/10 * 100%);
+    }
+  }
+  .xl\:w-6\/10 {
+    @media (width >= 80rem) {
+      width: calc(6/10 * 100%);
+    }
+  }
+  .xl\:w-7\/10 {
+    @media (width >= 80rem) {
+      width: calc(7/10 * 100%);
+    }
+  }
+  .\32 xl\:w-5\/10 {
+    @media (width >= 96rem) {
+      width: calc(5/10 * 100%);
+    }
+  }
+  .\32 xl\:w-6\/10 {
+    @media (width >= 96rem) {
+      width: calc(6/10 * 100%);
     }
   }
 }
