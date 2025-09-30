@@ -200,8 +200,6 @@
   }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
-  .mx-8 {
-    margin-inline: calc(var(--spacing) * 8);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -270,13 +268,17 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-1\/3 {
+    width: calc(1/3 * 100%);
+  }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -329,6 +331,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .items-center {
     align-items: center;
   }
@@ -338,8 +343,8 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-start {
-    justify-content: flex-start;
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-start {
     justify-content: flex-start;
@@ -395,6 +400,9 @@
   .bg-\[\#8ccfea\]\/70 {
     background-color: color-mix(in oklab, #8ccfea 70%, transparent);
   }
+  .bg-\[\#24323B\] {
+    background-color: #24323B;
+  }
   .bg-\[\#f52257\] {
     background-color: #f52257;
   }
@@ -428,6 +436,12 @@
   .bg-center {
     background-position: center;
   }
+  .fill-white {
+    fill: var(--color-white);
+  }
+  .stroke-white {
+    stroke: var(--color-white);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -445,8 +459,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -465,8 +477,6 @@
   }
   .px-30 {
     padding-inline: calc(var(--spacing) * 30);
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -479,11 +489,15 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
@@ -532,14 +546,23 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
   .text-\[1\.1rem\] {
     font-size: 1.1rem;
+  }
+  .text-\[1\.3rem\] {
+    font-size: 1.3rem;
   }
   .text-\[1\.6rem\] {
     font-size: 1.6rem;
   }
   .text-\[1\.8rem\] {
     font-size: 1.8rem;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
   }
   .text-\[2\.4rem\] {
     font-size: 2.4rem;
@@ -648,19 +671,9 @@
       flex-direction: row;
     }
   }
-  .sm\:justify-center {
-    @media (width >= 40rem) {
-      justify-content: center;
-    }
-  }
   .sm\:gap-3 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 3);
-    }
-  }
-  .sm\:gap-7 {
-    @media (width >= 40rem) {
-      gap: calc(var(--spacing) * 7);
     }
   }
   .md\:flex {
@@ -858,11 +871,6 @@
       font-size: 1.4rem;
     }
   }
-  .lg\:text-\[1\.8rem\] {
-    @media (width >= 64rem) {
-      font-size: 1.8rem;
-    }
-  }
   .lg\:text-\[2rem\] {
     @media (width >= 64rem) {
       font-size: 2rem;
@@ -871,16 +879,6 @@
   .lg\:text-\[34px\] {
     @media (width >= 64rem) {
       font-size: 34px;
-    }
-  }
-  .lg\:text-\[1\.\] {
-    @media (width >= 64rem) {
-      color: 1.;
-    }
-  }
-  .lg\:text-\[rem\] {
-    @media (width >= 64rem) {
-      color: rem;
     }
   }
   .xl\:flex {
@@ -901,11 +899,6 @@
   .xl\:w-1\/3 {
     @media (width >= 80rem) {
       width: calc(1/3 * 100%);
-    }
-  }
-  .xl\:w-1\/10 {
-    @media (width >= 80rem) {
-      width: calc(1/10 * 100%);
     }
   }
   .xl\:w-2\/3 {
@@ -941,11 +934,6 @@
   .xl\:gap-3 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 3);
-    }
-  }
-  .xl\:gap-7 {
-    @media (width >= 80rem) {
-      gap: calc(var(--spacing) * 7);
     }
   }
   .\32 xl\:w-5\/10 {
