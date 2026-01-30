@@ -1,33 +1,51 @@
-## 🚀 Installation du projet Social Network
+# 🌐 The Mountain – Projet Tailwind
 
-Suivez ces étapes pour lancer le projet en local :
+## 📖 Description
+Ce site vitrine a été conçu dans le but de **renforcer mes compétences en CSS avec Tailwind**, en mettant l’accent sur :
+- la **mise en page**
+- le **responsive design**
+- l’**esthétique globale** d’un site web moderne
 
-### 1️⃣ Cloner le projet
-dans le temrinal : 
-```bash
-git clone https://github.com/Meikaziku/luxury-service.git ./
-```
+Il s’agit d’un projet d’entraînement visant m'améliorer sur la qualité visuelle et l’ergonomie des interfaces web.
 
-### 2️⃣ Installer Tailwind CSS
-dans le temrinal : 
+---
+
+## 🎯 Objectifs du projet
+- Maîtriser les bases et les concepts avancés du **CSS**
+- Travailler le **design responsive** (mobile, tablette, desktop)
+- Améliorer la cohérence visuelle et l’expérience utilisateur
+- Mettre en pratique de bonnes pratiques en intégration web
+
+---
+
+## 🛠️ Technologies utilisées
+- **HTML5**
+- **Tailwind**
+
+---
+
+## 📱 Responsive Design
+Le site est entièrement responsive et s’adapte aux différentes tailles d’écran afin d’offrir une expérience utilisateur optimale sur tous les supports.
+
+---
+
+## 🚀 Lancer le projet
+
+1️⃣ Cloner le dépôt :
+   ```bash
+   git clone https://github.com/Meikaziku/The-Mountain-Tailwind-TP.git ./
+   ```
+
+2️⃣ Installer Tailwind : 
+dans le temrinal :
 ```bash
 npm install tailwindcss @tailwindcss/cli
 ```
 
-### 3️⃣ Compiler Tailwind en CSS prêt à l’emploi
-dans le temrinal : 
+3️⃣ Compiler Tailwind en CSS prêt à l’emploi
+dans le temrinal :
 ```bash
 npx tailwindcss -i ./style/style.css -o ./style/output.css --watch
 ```
 
-### 4️⃣ Importer la base de données
-Ouvrer le dossier du projet, récupérer le fichier social_network.sql dans le dossier bdd à la racine. 
-Creer ensuite une base de données et importez ce fichier.
-
-### 5️⃣ Modifier le fichier /utils/db-connect.php :
-```bash
-$user = 'user';
-$password = 'password';
-$dsn = 'mysql:host=localhost;dbname=social_network';
-```
-Dans le dbname du dsn, entrer le nom de votre base de donnée creer auparavant
+**Terminé !**
